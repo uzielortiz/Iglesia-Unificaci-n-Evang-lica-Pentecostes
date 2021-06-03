@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Mate SC', serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(120deg, #84fafa3f 0%, #8fd4f47a 100%), url(../img/iglesia.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    font-size: 50px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow:0 0 3px rgba(0, 0, 0, 0.5);
+}
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out ; 
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;  
+}
+.parrafo{
+    font-weight: 300;
+    font-size: 30px;
+}
+/*Misión y Visión*/
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: red ;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.contenedor-mision{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-mision img{
+    width: 50%;
+    height: 350px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.misionyvision{
+    width: 45%;
+}
+.mision{
+    margin-bottom: 15px;
+}
+.n-mision{
+    margin-bottom: 2px;
+    color:blue;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #84faea 0%, #8fd3f4 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.reflec{
+    background: #f2f2f2;
+    padding: 20px;
+}
+.contendor-reflexion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+    
+}
+.contendor-reflexion img{
+    width: 50%;
+    height: 360px;
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    cursor: pointer;
+}
+.reflexiona{
+    width: 40%;
+}
+.n-reflexion{
+    margin-bottom: 5px;
+    text-align: justify;  
+}
+.img-galeria{
+    object-fit: cover;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgb(0, 0, 0,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.show{
+    transform: translate(0);
+}
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    height: 70%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImg{
+    transform: scale(1);
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.maps{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+.no-ubica{
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+}
+.n-ubica{
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    border-radius: 20%;
+}
+.maps img{
+    width: 300px;
+    border-radius: 20%;
+}
+/* Footer */
+footer{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0, 0, 0, 0.096) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    padding-bottom: 0.1px;
+}
+footer div{
+   color: azure;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer a{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer-content p{
+    font-size: 18px;
+}
+.line{
+    padding: 2px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: azure;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+    .menu{
+        top: 20px;
+        right: 20px;
+    }
+    .head{
+        width: 90%;
+    }
+    .titulo{
+        font-size: 45px;
+    }
+    .parrafo{
+        font-size: 30px;
+    }
+    .contenedor-mision img{
+        width: 80%;
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    .contenedor-mision{
+        width: 90%;
+    }
+    .misionyvision{
+        width: 100%;   
+    }
+    .mision{
+        text-align: justify;
+    }
+    .agregar-imagen{
+        width: 85%;
+        
+    }
+    .contendor-reflexion img{
+        width: 80%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .reflexiona{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .n-reflexion{
+        text-align: justify;
+    }
+    .no-ubica{
+        margin-bottom: 30px;
+        width: 300;
+        height: 250;
+    }
+    .footer-content h2{
+        font-size: 25px;
+    }
+    .footer-content p{
+        font-size: 20px;
+    }
+    .politic{
+        font-size: 15px;
+    }
+    .politic a{
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 70vw;
+    }
+    .menu-navegacion a{
+        font-size: 18px;
+    }
+    .menu{
+      width: 30px;
+      height: 30px;
+    }
+    .head{
+        width: 70%;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .parrafo{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .mision{
+        font-size: 13px;
+    }
+    .contenedor-mision img{
+        width:100%;
+        height: 170px;
+        margin-bottom: 20px;
+    }
+    .reflexiona{
+        font-size: 13px ;
+    }
+    .agregar-imagen{
+        width: 95%;
+        height: 40%;
+    }
+    .contendor-reflexion img{
+       width: 250px;
+    }
+
+    .no-ubica{
+        margin-bottom: 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .maps img{
+        width: 200px;
+        border-radius: 20%;   
+    }
+    .footer-content h2{
+        font-size: 20px;
+    }
+    .footer-content p{
+        font-size: 15px;
+    }
+    .politic{
+        font-size: 12px;
+    }
+    .politic a{
+        font-size: 12px;
+    }
+    
+ }
